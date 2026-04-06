@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 1. Desarrollo de HTML mediante componentes</title>
+</head>
+<body>
+
+    <header>
+        <h1>Desarrollo de HTML mediante componentes</h1>
+    </header>
+
+    <!-- NAVEGACIÓN: links a las secciones de la página -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Lab 1: Práctica_ Intro a desarrollo Web con HTML</h2>
+        <p>Hola!!!! Me llamo Juan Andrés Elizalde Herrera y esta es mi primera página web</p>
+
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola! Me llamo Juan y estudio Ingeniería en Tecnologías Computacionales.<br>
+                Tengo 20 años y estoy muy emocionado por programar en HTML.<br>
+                La verdad no tengo mucha experiencia en programación de HTML,<br>
+                pero estoy aprendiendo y me encanta crear páginas web. Mis hobbies son:
+                <li>Jugar Fut</li>
+                <li>Jugar videojuegos</li>
+                <li>Salir con mis amigos</li>
+                <li>Ir al gimnasio</li>
+                Algo interesante de mi, es que me <strong>encanta cocinar</strong><br>
+                    y me gusta mucho la comida italiana. Espero aprender mucho en esta clase y 
+                    crear páginas web increíbles!
+                </p>
+        </section>
+
+        <!-- SECCIÓN PREGUNTAS -->
+        <section id="preguntas">
+            <h2>Preguntas</h2>
+
+            <details>
+                <summary>Pregunta 1: ¿Cuál es la diferencia 
+                    entre Internet y la World Wide Web?</summary>
+                <p>R1: El internet es una <strong>red global de computadoras interconectadas.</strong> 
+                    En el se usa un servicio llamado <strong>World Wide Web.</strong>
+                    Dicho servicio es un sistema de documentación e 
+                    hipervínculos funcionando por el internet.</p>
+            </details>
+
+            <details>
+                <summary>Pregunta 2: ¿Cuáles son las partes de un URL?</summary>
+                <p><ul>
+                    <li><strong>Protocolo</strong> </li>
+                    <li><strong>Nombre de dominio</strong> </li>
+                    <li><strong>Puerto</strong> </li>
+                    <li><strong>Ruta</strong> </li>
+                    <li><strong>Query String</strong> </li>
+                    <li><strong>Parámetros</strong> </li>
+                </ul></p>
+            </details>
+
+            <details>
+                <summary>Pregunta 3: ¿Cuál es el propósito 
+                    de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</summary>
+                <p><ul>
+                    <li><strong>Get:</strong> Se utiliza para solicitar información de un recurso específico.</li>
+                    <li><strong>Head:</strong> Similar a GET, pero solo devuelve los encabezados de la respuesta.</li>
+                    <li><strong>Post:</strong> Se utiliza para enviar datos al servidor y crear un nuevo recurso.</li>
+                    <li><strong>Put:</strong> Se utiliza para actualizar un recurso existente o crear uno nuevo si no existe.</li>
+                    <li><strong>Patch:</strong> Se utiliza para realizar actualizaciones parciales en un recurso existente.</li>
+                    <li><strong>Delete:</strong> Se utiliza para eliminar un recurso específico.
+                </ul></p>
+            </details>
+
+            <details>
+                <summary>Pregunta 4: ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, 
+                    por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? 
+                    ¿Por qué?</summary>
+                <p>El método post. Esto es debido a que está diseñado para enviar y crear datos. 
+                    Por lo que usa un cifrado en conjunto con HTTP.</p>
+            </details>
+
+            <details>
+                <summary>Pregunta 5: ¿Qué método HTTP se utiliza cuando a través 
+                    de un navegador web se accede a una página a través de un URL?</summary>
+                <p>El método get. Esto es debido a que se utiliza para solicitar información de un recurso específico, como una página web.</p>
+            </details>
+
+            <details>
+                <summary>Pregunta 6: Un servidor web devuelve una respuesta HTTP con código 200. 
+                    ¿Qué significa esto? ¿Ocurrió algún error?</summary>
+                <p>El código 200 significa que la petición de la búsqueda fue exitosa. 
+                    No ocurre ningún error, se despliega el recurso en el cuerpo del mensaje.</p>
+            </details>
+
+            <details>
+                <summary>Pregunta 7: ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? 
+                    Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</summary>
+                <p><ul>
+                    Un atributo HTML5 desaprobado significa que, siendo soportado por navegadores compatibles con código antiguo, su uso se desaconseja.
+
+                    Algunos elementos desaprobados son: 
+                    <li><strong>acronym</strong> — Define acronimos</li>
+                    <li><strong>basefont</strong> — Define tipografía base</li>
+                    <li><strong>center</strong> — Centra texto</li>
+                    <li><strong>coords</strong> — Define coordenadas para definir formas</li>
+                    Recuperado de: (Etiquetas y atributos obsoletos de HTML 4.01, n.d.)
+
+                    Las alternativas que se han desarrollado son el uso de CSS o 
+                    diferentes comandos con la misma funcionalidad.
+                </ul></p>
+            </details>
+
+            <details>
+                <summary>Pregunta 8: ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta 
+                    que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</summary>
+                <p>Depende del origen del error. El error 404 explica que el recurso no existe. 
+                    Por lo que el error puede ser tanto del usuario por una URL incorrecta 
+                    como puede ser problema del sitio. 
+                    Pero es responsabilidad del desarrollador verificar la funcionalidad del sitio.</p>
+            </details>
+
+            <details>
+                <summary>Pregunta 9: ¿Es responsabilidad del desarrollador corregir 
+                    un sitio web si un usuario reporta que intentó acceder al sitio y 
+                    se encontró con un error 500? ¿Por qué?
+                </summary>
+                <p>Sí, esto es porque el error 500 presenta un error de servidores internos.
+                     Generalmente significa que la aplicación crasheó.
+                     Es responsabilidad del desarrollador.</p>
+            </details>
+
+            <details>
+                <summary>Pregunta 10: ¿Qué componentes de estructura y estilo tiene una tabla?</summary>
+
+                <p>Componentes de estructura:</p>
+                <ul>
+                    <li><strong>table</strong> — Define inicio y fin de la tabla</li>
+                    <li><strong>tr</strong> — Contiene las celdas de una fila</li>
+                    <li><strong>th</strong> — Maneja los encabezados</li>
+                    <li><strong>td</strong> — Celdas comunes donde se insertan los datos</li>
+                    <li><strong>caption</strong> — Título de la tabla</li>
+                </ul>
+
+                <p>Componentes de estilo (mediante CSS):</p>
+                <ul>
+                    <li><strong>width</strong> — Ancho de la tabla o celda</li>
+                    <li><strong>border-collapse: collapse</strong> — Elimina espacios entre bordes</li>
+                    <li><strong>background-color</strong> — Color de fondo</li>
+                    <li><strong>color</strong> — Color del texto</li>
+                    <li><strong>text-align</strong> — Alineación del texto</li>
+                </ul>
+
+                <p>Fuente: <a href="https://nelkodev.com" target="_blank">NelkoDev (2024)</a></p>
+
+            </details>
+
+            <details>
+                <summary>Pregunta 11: ¿Cuáles son los principales controles de una forma HTML5?</summary>
+                <p><ul>
+                    <li><strong>Input</strong> </li>
+                    <li><strong>Textarea</strong> </li>
+                    <li><strong>Select</strong> </li>
+                    <li><strong>Checkbox</strong> </li>
+                    <li><strong>Radio</strong> </li>
+                    <li><strong>Button</strong> </li>
+                </ul></p>
+            </details>
+
+            <details>
+                <summary>Pregunta 12: Sobre el ciclo de vida y desarrollo 
+                de los sistemas de información</summary>
+
+                <p>¿Cuál es el ciclo de vida de los sistemas de información?</p>
+                <ul>
+                    <li><strong>Concepción:</strong> Surge la necesidad</li>
+                    <li><strong>Desarrollo:</strong> Análisis, diseño y construcción</li>
+                    <li><strong>Implementación:</strong> Producción y capacitación</li>
+                    <li><strong>Operación:</strong> Sistema en uso</li>
+                    <li><strong>Mantenimiento:</strong> Corrección de errores y mejoras</li>
+                    <li><strong>Retiro:</strong> Sistema descontinuado</li>
+                </ul>
+
+                <p>¿Cuál es el ciclo de desarrollo de sistemas de información?</p>
+                <ul>
+                    <li><strong>Planeación:</strong> Definición de alcance y recursos</li>
+                    <li><strong>Análisis:</strong> Requerimientos de usuario</li>
+                    <li><strong>Diseño:</strong> Arquitectura, base de datos e interfaces</li>
+                    <li><strong>Desarrollo:</strong> Código y construcción del sistema</li>
+                    <li><strong>Pruebas:</strong> Verificación de funcionamiento</li>
+                    <li><strong>Implementación:</strong> Entrega del sistema</li>
+                    <li><strong>Mantenimiento:</strong> Soporte y mejoras</li>
+                </ul>
+
+                <p>Fuente: <a href="https://www.ibm.com/es-es/think/topics/sdlc">IBM — ¿Qué es el SDLC?</a></p>
+
+            </details>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO con controles HTML5 -->
+        <section id="contacto">
+            <h2>Quien Eres</h2>
+            <form>
+                <label for="nombre">Primer Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="edad">Edad:</label>
+                <select id="edad" name="edad">
+                <option value="">Selecciona tu edad</option>
+                <option value="menor">Menor de 18</option>
+                <option value="18-25">18 - 25 años</option>
+                <option value="26-35">26 - 35 años</option>
+                <option value="36-45">36 - 45 años</option>
+                <option value="46-60">46 - 60 años</option>
+                <option value="mayor">Mayor de 60</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <ul>
+                <li>Basic native form controls - Learn web development | MDN. (2025, November 14). 
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Basic_native_form_controls">Learn web development</a>
+                </li>
+
+                <li>Etiquetas y atributos obsoletas de NTML 4.01. (n.d.). AulaDiv. 
+                    <a href="https://www.auladiv.com/tutorhtml/obsoletohtml4.html">Atributos Obsoletos HTML</a>
+                </li>
+
+                <li>IBM. (s. f.). ¿Qué es el ciclo de vida del desarrollo de software (SDLC)? Recuperado el 4 de abril de 2026
+                    <a href="https://www.ibm.com/es-es/think/topics/sdlc">SDLC</a>
+                </li>
+
+                <li>NelkoDev. (2024, June 3). Estructura y Estilos de Tablas en HTML: Guía Paso a Paso. Mi blog personal.
+                    <a href="https://nelkodev.com/blog/dominando-las-tablas-en-html-estructura-y-estilos-paso-a-paso/">Estructura y Estilos</a>
+                </li>
+
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Realizado por: Juan Andrés Elizalde Herrera
+        </p>
+        <p>
+            Contacto: A01708389 — A01708389@tec.mx
+        </p>
+        <p>
+            Editor utilizado: <a href="https://code.visualstudio.com">Visual Studio Code</a>
+        </p>
+    </footer>
+
+</body>
+</html>
