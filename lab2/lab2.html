@@ -1,10 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Práctica 2. CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <span id="logo">DDG knowledge</span>
+    <ul>
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#cards">Sobre mi</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#reflexion">Reflexión</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <h1>Bienvenido a mi primera pagina web con CSS</h1>
+    <p>Hecha por Juan Andres Elizalde Herrera.</p>
+    <a href="#cards" class="btn">Sobre mi</a>
+  </section>
+
+  <!-- TARJETAS -->
+  <section id="cards">
+    <h2>Sobre mi</h2>
+    <ul class="cards">
+      <li class="card">
+        <h3>Quien soy</h3>
+        <p>Me llamo Juan Andres Elizalde Herrera tengo 20 años
+          y estudio Ingeniería en Tecnologias computaciones.
+          Actualmente estoy en cuarto semestre y me gusta 
+          el desarrollo de paginas.
+        </p>
+      </li>
+      <li class="card">
+        <h3>Hobbies</h3>
+        <p> Mis hobbies son variados, pero son para despejar la mente:
+          <li>Ir al gimnasio</li>
+          <li>Practicar deportes</li>
+          <li>Cantar y tocar la guitarra</li>
+          <li>Pasar tiempo con mis amigos</li>
+        </p>
+      </li>
+      <li class="card">
+        <h3> Un poco mas sobre mi</h3>
+        <p>Soy una persona apasionada por la tecnología y el desarrollo web. 
+          Me encanta aprender nuevas habilidades y ponerlas en práctica.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Gmail: juanandreseh2005@gmail.com</p>
+    <p>Telefono: 442 121 28 01</p>
+  </section>
+
+  <!-- REFLEXIÓN -->
+  <section id="reflexion">
+    <h2>Reflexión</h2>
+
+    <article>
+      <h3>¿Cuál es la diferencia entre padding y margin?</h3>
+      <p>
+        El <strong>padding</strong> es el espacio interno entre el contenido y el borde del elemento;
+        forma parte del elemento y tiene su mismo color de fondo. El <strong>margin</strong> es el
+        espacio externo que separa al elemento de otros elementos; es transparente y no pertenece
+        al elemento en sí.
+      </p>
+    </article>
+
+    <article>
+      <h3>¿Por qué se recomienda usar box-sizing: border-box?</h3>
+      <p>
+        Con <strong>border-box</strong>, el padding yel border quedan incluidos dentro del ancho 
+        total del elemento, por lo que el tamaño que declaramos es exactamente el tamaño final.
+         Eso facilita el diseño y evita desbordamientos
+        inesperados.
+      </p>
+    </article>
+
+    <article>
+      <h3>¿Qué significa diseñar con enfoque mobile-first?</h3>
+      <p>
+        Significa escribir primero los estilos base pensados para pantallas pequeñas (móviles) y
+        despues usas <strong>@media</strong> queries con <strong>min-width</strong> para ajustar
+        estilos conforme la pantalla crece (tablet, desktop). Este enfoque prioriza la experiencia
+        del usuario mediante una escabilidad de dispositivos.
+      </p>
+    </article>
+
+    <article>
+      <h3>¿En qué situaciones preferirías rem sobre px?</h3>
+      <p>
+        Se usa mas <strong>rem</strong> para textos y espaciados porque se adapta en el tamaño de fuente
+        raíz del documento (<strong>html</strong>). En cambio, el uso de  <strong>px</strong> para
+        valores que no deben escalar, como bordes de <strong>1px</strong> o sombras.
+      </p>
+    </article>
+
+  </section>
 
 </body>
 </html>
