@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+
+</head>
+<body>
+  <h1>Películas Famosas</h1>
+        <ul class="list">
+            <li>Titanic</li>
+            <li>Jurassic Park</li>
+            <li>El señor de los Anillos</li>
+            <li>Star Wars</li>
+        </ul>
+
+    <p id = "para1">Soy un parrafo</p>
+    <p id = "para2">Soy otro parrafo </p>
+
+    <h2>Elementos que se utilizan en desarrollo web:</h2>
+    <section>
+    <h2>Mis laboratorios</h2>
+    <form action="/lab1/lab1.html">
+        <button type="submit">Ir a Lab 1 con form</button>
+    </form>
+    </section>
+    <section>
+        <h2>Preguntas </h2>
+        <ul>
+            <a> Porque es una buena practica usar JS para checar
+                que sean validos los inputs de las formas antes
+                de enviarlos al servidor?
+            </a><br>
+            <li>
+                Porque evita procesos innecesarios en el servidor.
+                Si el usuario ingresa o no algo incorrecto, JS
+                lo detecta y hace una experiencia optima.
+            </li><br>
+            <a> Como puedes saltarte validaciones en JS?</a><br>
+                <li> Desactivando JS en el navegador.</li>
+                <li>Devtools para modificar HTML</li>
+                <li>Peticion a traves de POSTMAN saltandose al navegador</li><br>
+            <a>Si se puede saltar, porque es buena practica?</a>
+            <li>Porque validaciones en JS y servidor son diferentes
+                propositos. Mejora la experiencia del usuario JS 
+                y el servidor mejora la seguridad. En realidad necesitamos
+                las dos.
+            </li>
+        </ul>
+    </section>
+
+
+</body>
+<script>
+    console.log(document);
+    //Uso de getElementById para obtener un elemento del DOM
+    const paragraph1 = document.getElementById("para1");
+    console.log(paragraph1);
+    //Si solo queremos leer el contenido del parrafo
+    console.log(paragraph1.textContent);
+    //Uso de querySelector para obtener un elemento del DOM
+    const h1Element = document.querySelector("h1");
+    console.log(h1Element);
+    //Podemos obtener toda la lista al usar la clase con el query selector
+    const list = document.querySelector(".list");
+    console.log(list);
+    //Usamos querySelectorAll para obtener todos los elementos de la lista.
+    const listItems = document.querySelectorAll("ul > li");
+    console.log(listItems);
+    //Para obtener visualizacion hijo por hijo realizamos iteracion
+    listItems.forEach((item) => {
+        console.log(item.innerText);
+        //innerText nos permite obtener el texto del elemento.
+    });
+    //Uso de createElement para crear un nuevo elemento del DOM
+    let listaSinOrden = document.createElement("ul");
+    //Uso de appendChild para agregar el nuevo elemento al DOM
+    document.body.appendChild(listaSinOrden);
+    let elemento1Lista = document.createElement("li");
+    elemento1Lista.textContent = "HTML";
+    listaSinOrden.appendChild(elemento1Lista);
+    let elemento2Lista = document.createElement("li");
+    elemento2Lista.textContent = "CSS";
+    listaSinOrden.appendChild(elemento2Lista);   
+    let elemento3Lista = document.createElement("li");
+    elemento3Lista.textContent = "JavaScript";
+    listaSinOrden.appendChild(elemento3Lista);
+
+    //Uso de modificacion de style para cambiar el estilo de un elemento del DOM
+    let newH3 = document.createElement("h3");
+    newH3.textContent = "Hola soy un texto en color negro";
+    document.body.appendChild(newH3);
+    const h3 = document.querySelector("h3");
+    h3.style.color = "blue";
+    h3.textContent = "Oh no me cambiaron a azul :( ";
+    console.log(newH3);
+
+    //Uso de JS con eventos
+    let newButton = document.createElement("button");
+    newButton.textContent = "Mostrar Alerta";
+    newButton.setAttribute("id", "btn");
+    document.body.appendChild(newButton);
+
+    const button = document.getElementById("btn");
+
+    //para agregar manejo de eventos agregamos addEventListener
+
+    button.addEventListener("click", () => {
+        alert("¡Hola! Has hecho click en el botón.");
+    });
+//Extras
+    //Navegacion con JavaScript
+    let slink = document.createElement("section");
+    document.body.appendChild(slink);
+
+    let titulo = document.createElement("h2");
+    titulo.textContent = "Mis laboratorios";
+    slink.appendChild(titulo);
+
+    //Nueva pestana
+    let linkNueva = document.createElement("a");
+    linkNueva.textContent = "Ir a Lab 1 con JS";
+    linkNueva.href = "/lab1/lab1.html";
+    slink.appendChild(linkNueva);
+    slink.appendChild(document.createElement("br"));
+
+    //Boton para pestana
+    let boton = document.createElement("button");
+    boton.textContent = "Ir a Lab 1 con JS";
+    boton.addEventListener("click", () => {
+        window.open("/lab1/lab1.html", "_blank");
+    });
+    slink.appendChild(boton);
+    slink.appendChild(document.createElement("br"));
+
+    let linkGithub = document.createElement("a");
+    linkGithub.textContent = "Mi GitHub";
+    linkGithub.href = "https://github.com/Juaneliz";
+    linkGithub.target = "_blank";
+    slink.appendChild(linkGithub);
+</script>
+
+</html>
