@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <%- include('./../css.ejs') %>
+</head>
+<body>
+  <h1>Obtener Usuarios</h1>
+  <p>Que beneficios y desventajas existen en el estilo mvc?</p>
+  <p>Ventajas</p>
+  <li>Organizacion</li>
+  <li>Lectura de codigo eficiente</li>
+  <li>Escalabilidad</li>
+  <li>Eficiencia en Debuggeo</li>
+  <li>Flujo de sistema</li>
+
+  <p>Desventajas</p>
+  <li>Sobrecarga</li>
+  <li>Confusion para archivos y organizacion</li>
+  <li>Errores faciles de implementar</li>
+
+  <p>Conclusion: A pesar de ser muy efectivo para el uso mediante organizacion
+    es inconcluso usarlo si tu proyecto no depende de un flujo separable. 
+  </p>
+  <ul>
+    <% for(var i = 0; i < usuarios.length; i++){  %>
+      <li>
+        <%= usuarios[i].id %>, 
+        <%= usuarios[i].nombre %>, 
+        <%= usuarios[i].activo %>
+      </li>
+    <% } %>
+  </ul>
+</body>
+<%- include('./../script.ejs') %>
+</html>
