@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>AJAX Consumption</title>
+    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <h1>AJAX consumption</h1>
+
+    <h2>Preguntas de Reflexion</h2>
+
+    <p>Importancia de Ajax En RIA</p>
+    <p>Lo que permite ajax es una serie de ventajas ante una aplicacion </p>
+    <li>Comunicacion con el servidor sin recarga</li>
+    <li>Actualización sobre partes de contenido</li>
+    <li> Mejoras en Ux</li>
+    <li>Interacciones dinamicas</li><br>
+
+    <p>Implicaciones de seguridad en AJAX.
+      Donde se hacen validacioens de seguridad?
+    </p><br>
+    <p> Las implicaciones en seguridad con AJAX son varias
+    </p>
+    <li>Exposicion de peticiones</li>
+    <li>Manipulacion de datos por medio de requests</li>
+    <li>Se valida siempre en el servidor</li>
+
+    <p>Que es JSON?</p>
+    <p>JavaScript Object Notation</p>
+    <li>ligero</li>
+    <li>facil de leer</li>
+    <div id="productos-container"></div>
+
+    <h2>Save Product</h2>
+
+    <form id="myForm">
+      <input type="number" id="id" name="id" placeholder="Id"></input>
+      <input type="text" id="name" name="name" placeholder="Name"></input>
+      <input type="number" id="price" name="price" step="any" placeholder="Price"></input>
+      <input type="submit" id="submitButton"></input>
+    </form>
+    <button id="updateProducts">Update Products</button>
+    <code id="codeResult"></code>
+    <div id="wrapper"></div>
+  </body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+</html>
